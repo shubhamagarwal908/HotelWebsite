@@ -9,16 +9,26 @@
         body{
             height: 100%;
             width: 100%;
+            margin: 0%;
+            background-color: #e0e0e0;
         }
         .main_container{
             height: 100%;
             width: 100%;
         }
+        .header,.footer{
+            background-color: rosybrown;
+        }
+        .hotel_cards{
+            margin: 2%;
+            background-color: rgb(132, 136, 139);
+            width: 40%;
+        }
     </style>
 </head>
 <body>
     <div class="main_container">
-        <header>
+        <header class="header">
             <a href="index.html"><img src="/assests/images/logo.png" height="60px" width="60px" alt="logo"></a>
             <a href="login.html" >Login</a>
         </header>
@@ -28,25 +38,31 @@
             <li><a href="list.html#map-view">Map View</a></li>
         </ul>
     </div>
-        <div id="list-view">
 
-    
+        <div id="list-view" class="hotel_cards">
         <a href="detail.html">
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" height="200px" width="250px">
         <h3>Raddison Blu Hotel</h3>
         <p>5 Star</p>
         <p>New Delhi</p>
     </a>
+    </div>
+    <div class="hotel_cards">
         <br>
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="" height="200px" width="250px">
         <h3>The Lalit New Delhi</h3>
         <p>4.5 Star</p>
-        <p>New Delhi</p>    
+        <p>New Delhi</p>  
+    </div>
+    <div class="hotel_cards">
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="" height="200px" width="250px">
         <h3>Taj Palace</h3>
         <p>4.0 Star</p>
         <p>New Delhi</p>
     </div>
+    </div>  
+
+    <br>
         <div id="map-view">
         <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="" >
         <br>
@@ -54,7 +70,7 @@
 
     </div>
     
-    <footer>
+    <footer class="footer">
         <a href="contact.html">Contact Us</a>
         <br>
        <a href="https://www.facebook.com/" target="_blank"> <img src="/assests/images/facebook.png" height="20px" width="22px" alt=""></a>

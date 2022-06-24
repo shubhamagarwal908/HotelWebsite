@@ -9,25 +9,39 @@
             body{
                 height: 100%;
                 width: 100%;
+                margin: 0%;
+                background-color: #e0e0e0;
             }
             .main_container{
                 height: 100%;
                 width: 100%;
             }
+            .header,.footer{
+            background-color: rosybrown;
+        }
+        .hotel_image{
+            margin: 2% 4% 0% 4% ;
+        }
+        .form{
+            margin: 0% 4% 1% 4%;
+        }
+        .content{
+            margin: 1% 4% 1% 4%;
+        }
         </style>
     </head>
     <body>
         <div class="main_container">
-            <header>
+            <header class="header">
                 <a href="index.html"> <img src="/assests/images/logo.png" height="60px" width="60px"
                     alt="logo"></a>
                     <a href="login.html">Login</a>
             </header>
-            <div>
+            <div >
                 <img
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" height="500px" width="500px">
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" height="500px" width="500px" class="hotel_image">
                 <br>
-                <form action="payment.html">
+                <form action="payment.html" class="form">
                     Adults: <input type="number" required min="1" value="1">
                     <br>
                     Name: <input type="text" name="" id="" required><br>
@@ -36,8 +50,7 @@
                     Total: <input type="text" readonly><br>
                     <button>Book Now</button>
                 </form>
-
-                <br>
+                <div class="content">
                 <h2>Raddison Blu Hotel</h2>
                 RATING
                 <p>5 Star</p>
@@ -53,7 +66,8 @@
                 <h5>DESCRIPTION</h5>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, consequatur. Laborum quos corrupti esse dolor qui itaque doloremque nulla eaque repudiandae, in soluta? Velit alias nam facilis aut magnam ducimus enim quaerat, voluptatem blanditiis esse modi delectus repudiandae praesentium? Provident modi perspiciatis sunt delectus dolore, at atque eligendi cum reprehenderit unde quia aperiam ea voluptatem voluptate porro nam culpa natus repellat veniam enim corporis.</p>
             </div>
-            <footer>
+        </div>
+            <footer class="footer">
                 <a href="contact.html" >Contact Us</a>
                 <br>
                 <a href="https://www.facebook.com/" target="_blank"> <img
