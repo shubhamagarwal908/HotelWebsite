@@ -14,10 +14,21 @@
             }
         .main_container{
             height: 100%;
-            width: 100%;
+                width: 100%;
+                padding: 80px 0;
         }
-        header,footer{
+        header{
             background-color: rosybrown;
+           width: 100%;
+            position: fixed;
+            top: 0;
+            
+        }
+        footer{
+            background-color: rosybrown;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
         }
         .content{
             background-color: rgb(132, 136, 139);
@@ -35,13 +46,33 @@
             border-radius: 5px;
             padding: 1% 2%;
         }
+        #login{
+            float: right;
+            margin: 1.5%;
+        }
+        .social_handles{
+            float: right;
+        }
+        .contact{
+            float: left;
+            margin: 1.5%;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .copyright{
+            text-align: center;
+            font-size: 10px;
+            margin:19px 0px;
+        }
     </style>
 </head>
 <body>
     <div class="main_container">
         <header>
             <a href="index.html"><img src="/assests/images/logo.png" height="60px" width="60px" alt="logo"></a>
-            <a href="login.html" target="_blank">Login</a>
+            <a href="login.html" target="_blank" id="login">Login</a>
         </header>
 
     <div>
@@ -64,14 +95,15 @@
        
         <a href="payment.html">Pay Now</a>
     </div>
-    <footer>
-        <a href="contact.html" target="_blank">Contact Us</a>
+    <footer class="footer">
+        <a href="contact.html" style="color: black;text-decoration:none;" class="contact">Contact Us</a>
         <br>
-       <a href="https://www.facebook.com/" target="_blank"> <img src="/assests/images/facebook.png" height="20px" width="22px" alt=""></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="/assests/images/instagram.png" height="20px" width="22px" alt=""></a>
-       <a href="https://twitter.com/" target="_blank"> <img src="/assests/images/twitter.png" height="20px" width="22px" alt=""></a>
-       <br>
-       &copy; 2020 ROOM SEARCH PVT.LTD
+       
+       <a href="https://twitter.com/" target="_blank"> <img src="/assests/images/twitter.png" height="20px" width="22px" alt="" class="social_handles"></a>
+      
+        <a href="https://www.instagram.com/" target="_blank"><img src="/assests/images/instagram.png" height="20px" width="22px" alt="" class="social_handles"></a>
+        <a href="https://www.facebook.com/" target="_blank"> <img src="/assests/images/facebook.png" height="20px" width="22px" alt="" class="social_handles"></a>
+      <p class="copyright"> &copy; 2020 ROOM SEARCH PVT.LTD</p>
     </footer>
 </div>
 </body>

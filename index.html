@@ -2,26 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Index</title>
+ 
     <style>
         body{
             height:100%;
             width:100%;
             margin: 0%;
             background-color: #e0e0e0;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            color: black;
+            text-decoration: none;
         }
         .main_container{
             height:100%;
             width:100%;
         }
-        .header,.footer{
+        .header{
             background-color: rosybrown;
+           width: 100%;
+            position: fixed;
+            top: 0;
+            
+        }
+        .footer{
+            background-color: rosybrown;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
         }
         .content_div{
             background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
-            height:480px; 
+            height:380px; 
+            max-height: 100%;
+            max-width: 100%;
             width: 100%;
             background-repeat: no-repeat;
             background-position:center bottom ;
@@ -31,42 +52,117 @@
             margin-left: 15%;
             margin-right: 15%;
             /* padding: 4% 4%; */
+            height: 380px;
             
         }
         .city_images{
             border-radius: 25%;
             padding: 4%;
+            opacity: 1;
+            transition: .5s ease;
+  backface-visibility: hidden;
         }
+        #login{
+            /* align-items: right; */
+            float: right;
+            margin: 1.5%;
+        }
+        #logo{
+            margin: auto;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .copyright{
+            text-align: center;
+            font-size: 10px;
+        }
+        .social_handles{
+            float: right;
+            padding: 1px;
+        }
+        #search_bar{
+            border-color: 1px transparent;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 12px;
+            /* display: inline-block; */
+            position: relative;
+            left: 50%;
+            top: 50%;
+            width: 100px;
+            margin: 0 auto;
+            
+        }
+        .view_more{
+            text-align: center;
+            text-decoration: none;
+        }
+        .contact{
+            float: left;
+            margin: 1.5%;
+        }
+        .text {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.city_cards:hover.delhi{
+    opacity: 0.3;
+}
+.city_cards:hover.middle{
+    opacity: 1;
+}
     </style>
 </head>
 <body>
     <div class="main_container">
         <header class="header">
-            <img src="/assests/images/logo.png" height="60px" width="60px" alt="logo">
-            <a href="login.html" >Login</a>
+            <img src="/assests/images/logo.png" height="60px" width="60px" alt="logo" id="logo">
+            <a href="login.html" id="login"  style="color: black; text-decoration: none;">Login</a>
         </header>
     <div class="content_div">
-        <input type="text" placeholder="city">
+        <input type="text" placeholder="City" id="search_bar">
     </div>
         <br>
         <div class="city_cards">
-       <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150px" width="150px"  alt="delhi" class="city_images"></a> 
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"  height="150px" width="150px" alt="goa" class="city_images">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"  height="150px" width="150px" alt="charminar"  class="city_images">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"  height="150px" width="150px" alt="kolkata" class="city_images">
+       <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150px" width="150px"  alt="delhi" class="city_images delhi"></a> 
+       <div class="middle">
+        <p class="text">Delhi</p>
+       </div>
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"  height="150px" width="150px" alt="goa" class="city_images goa">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"  height="150px" width="150px" alt="charminar"  class="city_images hyderabad">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"  height="150px" width="150px" alt="kolkata" class="city_images kolkata">
         
-       
-    </div>
-    <a href="/index.html">View more >> </a>
+    <a href="/index.html" > <p class="view_more" style="text-decoration: none; color:black;"> View more >> </p></a>
+</div>
+    <div>
     <footer class="footer">
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" style="color: black;text-decoration:none;" class="contact">Contact Us</a>
         <br>
-       <a href="https://www.facebook.com/" target="_blank"> <img src="/assests/images/facebook.png" height="20px" width="22px" alt=""></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="/assests/images/instagram.png" height="20px" width="22px" alt=""></a>
-       <a href="https://twitter.com/" target="_blank"> <img src="/assests/images/twitter.png" height="20px" width="22px" alt=""></a>
-       <br>
-       &copy; 2020 ROOM SEARCH PVT.LTD
+       
+       <a href="https://twitter.com/" target="_blank"> <img src="/assests/images/twitter.png" height="20px" width="22px" alt="" class="social_handles"></a>
+      
+        <a href="https://www.instagram.com/" target="_blank"><img src="/assests/images/instagram.png" height="20px" width="22px" alt="" class="social_handles"></a>
+        <a href="https://www.facebook.com/" target="_blank"> <img src="/assests/images/facebook.png" height="20px" width="22px" alt="" class="social_handles"></a>
+      <p class="copyright"> &copy; 2020 ROOM SEARCH PVT.LTD</p>
     </footer>
+    
+
  
 </div>
 </body>
