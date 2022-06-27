@@ -18,6 +18,15 @@ footer{
     position: fixed;
     width: 100%;
 }
+.hotel_description{
+    float: right;
+    margin-top: 0%;
+    margin-right: 27%;
+}
+.hotel_description1{
+    float: right;
+    margin-right: 42%;
+}
 #login{
     float: right;
     margin: 1.5%;
@@ -29,8 +38,9 @@ footer{
 }
 .hotel_cards{
     margin: 2%;
-    background-color: rgb(132, 136, 139);
+    background-color: lightgray;
     width: 43%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     
@@ -38,8 +48,9 @@ footer{
 }
 .hotel_cards1{
     margin: 2%;
-    background-color: rgb(132, 136, 139);
+    background-color: lightgray;
     width: 43%;
+    height: 100%;
     margin-left: 60px;
     margin-bottom: 5%;
  }

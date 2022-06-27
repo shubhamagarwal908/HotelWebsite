@@ -4,111 +4,100 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/detail.css">
         <title>Detail</title>
-        <style>
-            body{
-                height: 100%;
-                width: 100%;
-                margin: 0%;
-                background-color: #e0e0e0;
-            }
-            .main_container{
-                height: 100%;
-                width: 100%;
-                padding: 80px 0;
-            }
-
-            .header{
-            background-color: rosybrown;
-           width: 100%;
-            position: fixed;
-            top: 0;
-            
-        }
-        .footer{
-            background-color: rosybrown;
-            bottom: 0;
-            position: fixed;
-            width: 100%;
-        }
-        .hotel_image{
-            margin: 2% 4% 0% 4% ;
-        }
-        .form{
-            margin: 0% 4% 1% 4%;
-        }
-        .content{
-            margin: 1% 4% 1% 4%;
-        }
-        #login{
-            float: right;
-            margin: 1.5%;
-        }
-        .copyright{
-            text-align: center;
-            font-size: 10px;
-            margin:19px 0px;
-        }
-        .social_handles{
-            float: right;
-        }
-        .contact{
-            float: left;
-            margin: 1.5%;
-        }
-        a{
-            color: black;
-            text-decoration: none;
-        }
-        </style>
+     
     </head>
     <body>
         <div class="main_container">
             <header class="header">
-                <a href="index.html"> <img src="/assests/images/logo.png" height="60px" width="60px"
-                    alt="logo"></a>
-                    <a href="login.html" id="login">Login</a>
+                <a href="index.html"> <img src="/assests/images/logo.png"
+                        height="60px" width="60px"
+                        alt="logo"></a>
+                <a href="login.html" id="login">Login</a>
             </header>
-            <div >
-                <img
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" height="500px" width="500px" class="hotel_image">
-                <br>
-                <form action="payment.html" class="form">
-                    Adults: <input type="number" required min="1" value="1">
-                    <br>
-                    Name: <input type="text" name="" id="" required><br>
-                    From Date : <input type="date" required><br>
-                    To Date: <input type="date" required><br>
-                    Total: <input type="text" readonly><br>
-                    <button>Book Now</button>
-                </form>
-                <div class="content">
-                <h2>Raddison Blu Hotel</h2>
-                RATING
-                <p>5 Star</p>
-                AMENITIES
-                <ul>
-                    <li>Room Service</li>
-                    <li>Restaurant</li>
-                    <li>Business center</li>
-                    <li>Fitness center</li>
-                    <li>Pool</li>
+            <div>
+                <div class="image_form">
+                    <div class="image">
+                        <img
+                            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                            alt="" height="350px" width="500px"
+                            class="hotel_image">
+                        <br>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="form_div">
+                    <form action="payment.html" class="form">
+                        Adults: <input type="number" required min="1" value="1" style="margin: 0% 0% 0% 11%;">
+                    <br><br><br>
+                    Name: <input type="text" name="" id=""  style="margin: 0% 0% 0% 13%;" required><br><br><br>
+                    From Date : <input type="date"  style="margin: 0% 0% 0% 4%;" required><br><br><br>
+                    To Date: <input type="date"   style="margin: 0% 0% 0% 10%;" required><br><br><br>
+                    Total: <input type="text"  style="margin: 0% 0% 0% 16%;" readonly><br><br><br>
+                    <button class="button">Book Now</button>
+                        <!-- <label for="Adult" class="labels">Adults:</label>
+                        <input class="inputs" type="number" required min="1" value="1">
+                        <br>
+                        <label class="labels" for="Name">Name:</label>
+                        <input class="inputs" type="text" required>
+                        <br>
+                        <label class="labels" for="date">From Date :</label>
+                        <input class="inputs" type="date" required>
+                        <br>
+                        <label class="labels" for="date">To Date :</label>
+                        <input class="inputs" type="date" required>
+                        <br>
+                        <label  class="labels" for="total">Total: </label>
+                        <input class="inputs" type="number" name="" id="" readonly>
+                        <br>
+                        <button>Book Now</button> -->
+                    </form>
+                </div>
 
-                </ul>
-                <h5>DESCRIPTION</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, consequatur. Laborum quos corrupti esse dolor qui itaque doloremque nulla eaque repudiandae, in soluta? Velit alias nam facilis aut magnam ducimus enim quaerat, voluptatem blanditiis esse modi delectus repudiandae praesentium? Provident modi perspiciatis sunt delectus dolore, at atque eligendi cum reprehenderit unde quia aperiam ea voluptatem voluptate porro nam culpa natus repellat veniam enim corporis.</p>
+                </div>
+
+                <div class="content">
+                    <h2>Raddison Blu Hotel</h2>
+                   <h4> RATING</h4>
+                    <p>5 Star</p>
+                   <h4> AMENITIES</h4>
+                    <ul>
+                        <li>Room Service</li>
+                        <li>Restaurant</li>
+                        <li>Business center</li>
+                        <li>Fitness center</li>
+                        <li>Pool</li>
+
+                    </ul>
+                    <h4>DESCRIPTION</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Officiis, consequatur. Laborum quos corrupti esse dolor
+                        qui itaque doloremque nulla eaque repudiandae, in
+                        soluta? Velit alias nam facilis aut magnam ducimus enim
+                        quaerat, voluptatem blanditiis esse modi delectus
+                        repudiandae praesentium? Provident modi perspiciatis
+                        sunt delectus dolore, at atque eligendi cum
+                        reprehenderit unde quia aperiam ea voluptatem voluptate
+                        porro nam culpa natus repellat veniam enim corporis.</p>
+                </div>
             </div>
-        </div>
-        <footer class="footer">
-            <a href="contact.html" style="color: black;text-decoration:none;" class="contact">Contact Us</a>
-            <br>
-           
-           <a href="https://twitter.com/" target="_blank"> <img src="/assests/images/twitter.png" height="20px" width="22px" alt="" class="social_handles"></a>
-          
-            <a href="https://www.instagram.com/" target="_blank"><img src="/assests/images/instagram.png" height="20px" width="22px" alt="" class="social_handles"></a>
-            <a href="https://www.facebook.com/" target="_blank"> <img src="/assests/images/facebook.png" height="20px" width="22px" alt="" class="social_handles"></a>
-          <p class="copyright"> &copy; 2020 ROOM SEARCH PVT.LTD</p>
-        </footer>
+            <footer class="footer">
+                <a href="contact.html" style="color:
+                    black;text-decoration:none;" class="contact">Contact Us</a>
+                <br>
+
+                <a href="https://twitter.com/" target="_blank"> <img
+                        src="/assests/images/twitter.png" height="20px"
+                        width="22px" alt="" class="social_handles"></a>
+
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="/assests/images/instagram.png" height="20px"
+                        width="22px" alt="" class="social_handles"></a>
+                <a href="https://www.facebook.com/" target="_blank"> <img
+                        src="/assests/images/facebook.png" height="20px"
+                        width="22px" alt="" class="social_handles"></a>
+                <p class="copyright"> &copy; 2020 ROOM SEARCH PVT.LTD</p>
+            </footer>
         </div>
     </body>
 </html>

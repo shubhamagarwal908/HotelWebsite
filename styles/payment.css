@@ -1,0 +1,81 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    background-color: #e0e0e0;
+}
+.main_container{
+height: 100%;
+    width: 100%;
+    padding: 80px 0;
+}
+header{
+background-color: rosybrown;
+width: 100%;
+position: fixed;
+top: 0;
+
+}
+footer{
+background-color: rosybrown;
+bottom: 0;
+position: fixed;
+width: 100%;
+}
+.content{
+background-color: rgb(132, 136, 139);
+width: 50%;
+height: 100%;
+margin: 4% auto;
+}
+.customer_info {
+margin: 1% 8% 1% 13%;
+}
+.tariff{
+margin: 2% 2% 2% 5%;
+padding: 1% 2%;
+}
+.pay{
+margin: 5% 1% 1% 16%;
+}
+#login{
+float: right;
+margin: 1.5%;
+}
+.social_handles{
+float: right;
+}
+.contact{
+float: left;
+margin: 1.5%;
+}
+a{
+color: black;
+text-decoration: none;
+}
+.copyright{
+text-align: center;
+font-size: 10px;
+margin:19px 0px;
+}
+.main_content{
+display: flexbox;
+}
+.image{
+max-height: 300px;
+max-width: 270px;
+height: 100%;
+}
+.hotel_description{
+float: right;
+margin-top: 5%;
+margin-right: 23%;
+}
+.details{
+background-color: rosybrown;
+display: flex;
+border: 2px solid black;
+}
+b{
+font-family: cursive;
+}

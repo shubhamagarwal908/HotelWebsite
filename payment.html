@@ -4,69 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/payment.css">
     <title>Payment</title>
-    <style>
-        body{
-                height: 100%;
-                width: 100%;
-                margin: 0%;
-                background-color: #e0e0e0;
-            }
-        .main_container{
-            height: 100%;
-                width: 100%;
-                padding: 80px 0;
-        }
-        header{
-            background-color: rosybrown;
-           width: 100%;
-            position: fixed;
-            top: 0;
-            
-        }
-        footer{
-            background-color: rosybrown;
-            bottom: 0;
-            position: fixed;
-            width: 100%;
-        }
-        .content{
-            background-color: rgb(132, 136, 139);
-            width: 50%;
-            height: 20%;
-            margin: 2% auto;
-        }
-        .customer_info{
-            margin: 2%;
-
-        }
-        .tariff{
-            margin: 2%;
-            border: 1px solid black;
-            border-radius: 5px;
-            padding: 1% 2%;
-        }
-        #login{
-            float: right;
-            margin: 1.5%;
-        }
-        .social_handles{
-            float: right;
-        }
-        .contact{
-            float: left;
-            margin: 1.5%;
-        }
-        a{
-            color: black;
-            text-decoration: none;
-        }
-        .copyright{
-            text-align: center;
-            font-size: 10px;
-            margin:19px 0px;
-        }
-    </style>
+   
 </head>
 <body>
     <div class="main_container">
@@ -75,13 +15,18 @@
             <a href="login.html" target="_blank" id="login">Login</a>
         </header>
 
-    <div>
+    <div class="main_content">
         <div class="content">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" height="500px" width="500px">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="image" alt="" height="500px" width="500px">
+            <div class="hotel_description">
             <h3>Raddison Blu Hotel</h3>
             <p>#38 of 1,289 hotels in New Delhi</p>
             <p>National Highway 8, New Delhi 110017 India</p>
         </div>
+        </div>
+
+        <div class="details">
+    
         <div class="customer_info">
             <p><b>Name</b>:John Doe</p>
             <p><b>Number of Adults</b>: 2</p>
@@ -92,9 +37,11 @@
             <p><b>Tariff Breakdown</b>: Rs 1000 x 2 Adults x 5 Nights</p>
             <p><b>Total Breakdown</b>: Rs 10000</p>
         </div>
-       
+       <div class="pay">
         <a href="payment.html">Pay Now</a>
     </div>
+    </div>
+</div>
     <footer class="footer">
         <a href="contact.html" style="color: black;text-decoration:none;" class="contact">Contact Us</a>
         <br>
