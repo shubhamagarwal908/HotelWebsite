@@ -98,3 +98,10 @@ padding: 2px 10px;
     margin: 0.6% 2%;
     padding: 0.1% 0.2%;
 }
+
+.star{
+    font-size: 45px;
+}
+.checked{
+    color: orange;
+}

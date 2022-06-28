@@ -87,3 +87,13 @@ padding: 0% 0%;
 margin: 0% 0% 0% 40%;
 padding: 2%
 }
+
+.star{
+    font-size: 45px;
+}
+.checked{
+    color: orange;
+}
+.prev{
+    background-color: rosybrown;
+}

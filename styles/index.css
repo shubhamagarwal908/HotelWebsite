@@ -46,6 +46,8 @@ body{
     
 }
 .city_images{
+    height: 150px;
+    width: 150px;
     border-radius: 25%;
     padding: 4%;
     opacity: 1;
@@ -90,11 +92,13 @@ a{
 .view_more{
     text-align: center;
     text-decoration: none;
+    margin: 17px 480px;
 }
 .contact{
     float: left;
     margin: 0.6% 2%;
     padding: 0.1% 0.2%;
+    /* position: fixed; */
 }
 .text {
 background-color: white;
@@ -113,9 +117,29 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 text-align: center;
 }
+
 .city_cards:hover.delhi{
 opacity: 0.3;
 }
+
 .city_cards:hover.middle{
 opacity: 1;
 }
+.delhi{
+    width: 253px;
+    height: 250px;
+}
+.goa{
+    width: 253px;
+    height: 250px;
+}
+.hyderabad{
+    width: 253px;
+    height: 250px;
+}
+.kolkata{
+    width: 253px;
+    height: 250px;
+}
+
+
