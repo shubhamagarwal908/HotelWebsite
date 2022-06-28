@@ -19,6 +19,7 @@ body{
    width: 100%;
     position: fixed;
     top: 0;
+    /* height: 15%; */
     
 }
 .footer{
@@ -52,9 +53,9 @@ body{
 backface-visibility: hidden;
 }
 #login{
-    /* align-items: right; */
+    padding: 0.3%;
     float: right;
-    margin: 1.5%;
+    margin: 0.7% 3%;
 }
 #logo{
     margin: auto;
@@ -70,6 +71,7 @@ a{
 .social_handles{
     float: right;
     padding: 1px;
+    margin:11px 2px 1px 0px;
 }
 #search_bar{
     border-color: 1px transparent;
@@ -91,7 +93,8 @@ a{
 }
 .contact{
     float: left;
-    margin: 1.5%;
+    margin: 0.6% 2%;
+    padding: 0.1% 0.2%;
 }
 .text {
 background-color: white;

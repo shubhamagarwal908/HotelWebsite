@@ -79,3 +79,17 @@ border: 2px solid black;
 b{
 font-family: cursive;
 }
+.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.social_handles{
+    float: right;
+    padding: 1px;
+    margin:11px 2px 1px 0px;
+}
+.contact{
+    float: left;
+    margin: 0.6% 2%;
+    padding: 0.1% 0.2%;
+}
