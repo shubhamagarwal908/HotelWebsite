@@ -23,7 +23,8 @@
                 <!-- <button type="button" class="btn btn-light" id="login">LOGIN</button> -->
                 <!-- <a href="login.html" id="login"  style="color: black; text-decoration: none;">Login</a> -->
                 <a href="" id="login" type="button" class="btn btn-light"
-                    data-toggle="modal" data-target="#modalLoginForm">LOGIN</a>
+                    data-toggle="modal" data-target="#modalLoginForm"
+                    name="LOGIN" onclick="my_Function1()">LOGIN</a>
             </header>
 
             <!-- Modal -->
@@ -96,8 +97,10 @@
                     class="city_images kolkata">
 
                 <div>
-                    <a href="/index.html"><button type="button" class="btn btn-secondary view_more" onclick="myFunction()">View More</button></a>
-                   <!-- <p class="view_more" type="button" class="btn btn-secondary"
+                    <a href="/index.html"><button type="button" class="btn
+                            btn-secondary view_more" name="View More"
+                            id="view_more" onclick="myFunction()">View More</button></a>
+                    <!-- <p class="view_more" type="button" class="btn btn-secondary"
                             style="text-decoration: none; color:black;"> View
                             more >> </p> -->
                 </div>
@@ -161,6 +164,6 @@
                 src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script
                 src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-                <script src="./scripts/index.js"></script>
+            <script src="./scripts/index.js"></script>
         </body>
     </html>
