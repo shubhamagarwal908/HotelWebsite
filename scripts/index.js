@@ -14,6 +14,6 @@ function myFunction() {
     document.getElementById("city_cards1").appendChild(node);
     }
 
-    function my_Function1(){
+    function my_Function1() {
         document.getElementById("login").value="LOGOUT";
     }
