@@ -1,3 +1,3 @@
 function pay(){
-    alert("Hi Your bookinfg is successful!!")
+    alert("Hi Your bookinfg is successful!!");
 }
